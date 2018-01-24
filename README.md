@@ -1,9 +1,11 @@
 # 对SwipeRefreshLayout进行拓展，支持上拉刷新
-[![](https://jitpack.io/v/joyrun/PullUpSwipeRefreshLayout.svg)](https://jitpack.io/#joyrun/PullUpSwipeRefreshLayout)
+[![](https://jitpack.io/v/charlesgrant/PullUpRefreshLayout.svg)](https://jitpack.io/#charlesgrant/PullUpRefreshLayout)
 
 ### 引用方式
 
-修改项目根目录的build.gradle：
+#### gradle
+
+update project's root dir , build.gradle：
 
 ```
 allprojects {
@@ -14,18 +16,40 @@ allprojects {
 }
 ```
 
-修改app的build.gradle：
+update app's build.gradle：
 
 ```
 dependencies {
-	compile 'com.github.joyrun:PullUpSwipeRefreshLayout:0.1.1'
+	        compile 'com.github.charlesgrant:PullUpRefreshLayout:0.1.0'
 }
 ```
 
+#### maven
+
+Step 1. Add the JitPack repository to your build file
+
+```
+<repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
+Step 2. Add the dependency
+
+```
+<dependency>
+    <groupId>com.github.charlesgrant</groupId>
+    <artifactId>PullUpRefreshLayout</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
 
 ## License
 
-    Copyright 2016 Joyrun, Inc.
+    Copyright 2016 Charles, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
